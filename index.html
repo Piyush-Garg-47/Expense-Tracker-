@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js"></script>
 </head>
 <body>
-    Balance
+    <div class="container">
+        <div class="box">
+            <section class="box_upper">
+                <h1>Expense Tracker</h1>
+                <div class="balance">
+                    <h2>$0</h2>
+                    <h3>your balance</h3>
+                </div>
+            </section>
+            <div class="transaction_container">
+                <h3>Transaction</h3>
+                <hr>
+                <div class="transactions">
+                    <div class="transaction">
+                        <div class="left">
+                            <p>Example Text</p>
+                             <p>+$200</p>
+                        </div>
+                        <div class="status credit">
+                            c
+                        </div>
+                    </div>
+                    <div class="transaction">
+                        <div class="left">
+                            <p>Example Text</p>
+                             <p>+$200</p>
+                        </div>
+                        <div class="status dedit">
+                            D
+                        </div>
+                    </div>
+                </div>
+                <section class="transaction_form">
+                    <h3>Add Transaction</h3>
+                    <form>
+                       <div class="form_control">
+                        <label for="text">Text</label>
+                        <input type="text" name="text" id="text">
+                       </div>
+                       <div class="form_control">
+                        <label for="amount">Amount</label>
+                        <input type="number" name="text" id="amount">
+                       </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

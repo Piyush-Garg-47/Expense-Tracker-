@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #3a3a3a;
+  --primary-dark: #302d2d;
+  --green: #008104;
+  --red: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  background-color: var(--primary-dark);
+  height: 100vh;
+  max-height: 850px;
+  width: 450px;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.balance, .box_upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance {
+  margin-top: 20px;
+}
+
+.transaction_container {
+  margin-top: 20px;
+}
+
+.transactions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaction {
+  color: white;
+  background-color: black;
+  display: flex;
+}
+
+.transaction .left {
+  padding: 7px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  display: grid;
+  place-items: center;
+  background-color: var(--green);
+  min-height: 40px;
+  min-width: 40px;
+  color: white;
+}
+
+.credit {
+  background-color: var(--green);
+}
+
+.debit {
+  background-color: var(--red);
+}
+
+.transaction_form {
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: black;
+  padding: 20px;
+}
+.transaction_form h3{
+    margin-bottom: 10px;
+}
+.form_control{
+    display: flex;
+    flex-direction:column;
+}
+.form_control:first-child{
+    flex: 2;
+}
+form{
+    display: flex;
+    gap: 10px;
+}
+form input{
+    padding: 10px 15px;
+}
