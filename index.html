@@ -43,13 +43,25 @@
                 <section class="transaction_form">
                     <h3>Add Transaction</h3>
                     <form>
-                       <div class="form_control">
-                        <label for="text">Text</label>
-                        <input type="text" name="text" id="text">
-                       </div>
-                       <div class="form_control">
-                        <label for="amount">Amount</label>
-                        <input type="number" name="text" id="amount">
+                     <div class="inputs">
+                        <div class="form_control">
+                            <label for="text">Text</label>
+                            <input placeholder="Enter descripation" type="text" name="text" id="text">
+                           </div>
+                           <div class="form_control">
+                            <label for="amount">Amount</label>
+                            <input placeholder="Enter amount" type="number" name="text" id="amount">
+                           </div>
+                     </div>
+                       <div class="buttons_container">
+                         <button id="earnBtn">
+                            <p>$0</p>
+                            <p>Earnings</p>
+                         </button>
+                         <button id="expBtn">
+                            <p>$0</p>
+                            <p>Expense</p>
+                         </button>
                        </div>
                     </form>
                 </section>
