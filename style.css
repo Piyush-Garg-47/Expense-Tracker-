@@ -76,6 +76,7 @@ h3 {
   color: white;
   background-color: black;
   display: flex;
+  flex-direction: column;
 }
 
 .transaction .left {
@@ -85,7 +86,21 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-
+.content{
+  display:flex;
+}
+.lower{
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  display: none;
+}
+.lower img{
+  height: 20px;
+}
+.showTransaction{
+  display: flex;
+}
 .status {
   display: grid;
   place-items: center;
